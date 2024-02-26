@@ -37,11 +37,11 @@ header{
     position:fixed;
     padding: 1.5rem 0;
 }
-.logo img{
-    display:block;
+.logo {
+    display:flex;
     /* object-fit: cover; */
     width:70%;
-    mix-blend-mode: multiply;
+    color:var(--primary_color)
     
 }
 .navbar{
