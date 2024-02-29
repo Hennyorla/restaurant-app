@@ -28,6 +28,29 @@ a{
     margin: 0 auto;
     padding: 0 80px;
 }
+.main_heading{
+    font-size:4rem;
+    font-family: var(--righteous);
+    text-align: center;
+}
+.normal_heading{
+    font-size:2rem;
+    font-family:var(--righteous);
+    color:var(--white_color);
+    text-align: center;
+}
+.main_heading-1{
+    font-size:4rem;
+    font-family: var(--righteous);
+    text-align: center;
+    color:#000
+}
+.normal_heading-1{
+    font-size:2rem;
+    font-family:var(--righteous);
+    text-align: center;
+    color:var(--primary_color)
+}
 /* utility ends */
 /* header start */
 
@@ -37,21 +60,22 @@ header{
     position:fixed;
     padding: 1.5rem 0;
 }
-.logo {
-    display:flex;
+.logo h1 {
+    display:flex !important;
     /* object-fit: cover; */
-    width:70%;
-    color:var(--primary_color)
+    width:100% !important;
+    color:var(--primary_color) !important;
+    font-size: 30px !important;
     
 }
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
 }
 .navbar nav{
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
 }
 .navbar nav li{
     
@@ -75,6 +99,12 @@ transition:all 0.5s ease-in-out;
 }
 .navbar nav li a:hover::after{
 width:100%;
+}
+.btn{
+    font-size:2.2rem;
+    color:var(--white_color);
+    cursor:pointer;
+    display: none;
 }
 /* header ends */
 
@@ -103,6 +133,13 @@ z-index:-10;
     flex-direction:column;
     min-height: 100vh;
 }
+#showcase .content h1{
+    font-size: 4rem;
+    font-family: var(--righteous);
+    color: var(--white_color);
+    text-align: center;
+    letter-spacing: 2px;
+}
 #showcase .content h2{
     font-size: 7rem;
     font-family: var(--righteous);
@@ -116,4 +153,143 @@ z-index:-10;
     color: var(--white_color);
     text-align: center;
     letter-spacing: 2px;
+}
+/* showcase closes */
+
+/* special offer starts */
+
+#sp_offer{
+    padding:10rem 0;
+}
+.sp_content{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width:100%;
+    grid-gap:4rem ;
+
+}
+.headings h2{
+    font-size: 4rem;
+    font-family: var(--righteous);
+    
+}
+.headings h3{
+    font-size: 2rem;
+    font-family: var(--ubuntu);
+    color: var(--primary_color);
+}
+.imgs_content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3rem 0;
+}
+.imgs{
+    display:flex;
+    align-items: center;
+}
+.imgs img{
+    display:block;
+    object-fit: cover;
+    /* width:50%; */
+    }
+    .content_for_img{
+        padding-left: 3rem;
+    }
+    .content_for_img h4{
+        font-size: 2rem;
+        padding-block-end: 0.5rem;
+        font-family: var(--ubuntu);
+    }
+    .content_for_img p{
+        font-size: 1.2rem;
+        font-family: var(--white_color);
+        line-height: 1.5;
+    }
+    .imgs_content .price{
+        font-size:3rem;
+        font-family: var(--righteous);
+        border: 2px solid #ddd;
+        padding:1rem;
+        border-radius: 50%;
+    }
+    .right_side_content{
+        width:100%;
+        position: relative;
+    }
+    .right_side_content img{
+        display:block;
+        width:100%;
+        object-fit: cover;
+        margin-left: auto;
+    }
+    .img_right_side  .over_img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 4rem;
+        text-align: center;
+        background: var(--primary_color);
+        color: var(--white_color);
+        border-radius: 60%;
+    }
+    .over_img h2{
+        font-size: 2rem;
+    }
+    .over_img a{
+        color:var(--white_color);
+    }
+   
+/* Reservation Starts */
+
+#reservation_tbl {
+    background: url('../images/Yummy\ pizza.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    margin-bottom: 100px;
+}
+  .form_data{
+ background: var(--primary_color);
+ padding: 4rem;
+ width: 50%;
+ color:var(--white_color);
+ margin-left: 25%;
+ margin-right: 30%;
+}
+.form_data form {
+    padding: 4rem 0;
+}
+.form_data form input{
+    width:49.5%;
+    padding: 0.7rem 0.4rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+
+}
+.form_data form textarea{
+    width:100%;
+    padding:1rem 0.4rem;
+}
+.form_data form button{
+    display:inline-block;
+    width:100%;
+    border:none;
+    padding:0.9rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+.form_data form button:hover{
+    background: #ccc;
+}
+.card-body{
+    /* width: 100px !important;
+    height: 100px !important; */
+    margin-top: 40px !important;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    margin-right: 50px  !important;
 }
